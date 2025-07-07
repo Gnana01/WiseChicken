@@ -1,6 +1,6 @@
 ::: titlepage
-![image](college_logo.png){width="3cm"}
-![image](ibm_logo.jpg){width="3cm"}
+![image](doc_images/college_logo.png){width="3cm"}
+![image](doc_images/ibm_logo.jpg){width="3cm"}
 
 **Course-Recommendation-Bot**
 
@@ -227,15 +227,15 @@ Here's a step-by-step explanation of the working:
 
 ## 1.Actions page in IBM watsonx assistant {#actions-page-in-ibm-watsonx-assistant .unnumbered}
 
-![Watsonx assistant.](output4.png){width="90%"}
+![Watsonx assistant.](doc_images/output4.png){width="90%"}
 
 ## 2.Deployed chat-bot in static web page {#deployed-chat-bot-in-static-web-page .unnumbered}
 
-![Web Interface Screenshot](output1.png){width="90%"}
+![Web Interface Screenshot](doc_images/output1.png){width="90%"}
 
 ## 3.Chat-bot answering the queries {#chat-bot-answering-the-queries .unnumbered}
 
-![Chat-bot answering user queries](output2.png){#fig:chatbot_output
+![Chat-bot answering user queries](doc_images/output2.png){#fig:chatbot_output
 width="50%"}
 
 # Project Links
