@@ -1,18 +1,5 @@
 ::: titlepage
-![image](doc_images/college_logo.png){width="3cm"}
-![image](doc_images/ibm_logo.jpg){width="3cm"}
 
-**Course-Recommendation-Bot**
-
-Taticherla Gnana Sai Siddartha
-
-Roll Number: 22BCE8086
-
-VIT-AP
-
-Branch: CSE- AI&ML
-
-*Date of Submission: 2025-07-06*
 :::
 
 # Introduction

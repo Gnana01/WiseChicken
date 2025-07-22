@@ -1,37 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="html" href="">
     <meta charset="UTF-8">
-    <title>Learning Path Chatbot</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #f9f9f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        p {
-            color: #555;
-            max-width: 400px;
-            text-align: center;
-        }
-    </style>
+    <title>Learning Path</title>
 </head>
 <body>
-    <h1>Learning Path Chatbot</h1>
+    <h1>Learning Path</h1>
     <p>Ask your questions about certifications or learning paths to get personalized recommendations using AI.</p>
-    <button>
-    <a href="https://www.youtube.com/" target="_blank">
+    <div >
+        <input class="search-bar" type="text" placeholder="search" >
+    <button title="search" class="SearchButton">
+    <a>
         click
     </a>
     </button>
+    </div>
+    
     <!-- Watson Assistant Web Chat Script -->
     <script>
         window.watsonAssistantChatOptions = {
