@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Recommendation Chat</title>
+</head>
+<body>
+    <h2>Ask Your Course Question</h2>
+    <form method="post">
+        <textarea name="prompt" rows="4" cols="50" placeholder="e.g., I want to learn AI with no coding experience. What should I take?"></textarea><br>
+        <input type="submit" value="Ask">
+    </form>
+    {% if answer %}
+        <h3>Answer:</h3>
+        <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>
