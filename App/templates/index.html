@@ -2,16 +2,31 @@
 <html>
 <head>
     <title>Course Recommendation Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h2>Ask Your Course Question</h2>
-    <form method="post">
-        <textarea name="prompt" rows="4" cols="50" placeholder="e.g., I want to learn AI with no coding experience. What should I take?"></textarea><br>
-        <input type="submit" value="Ask">
-    </form>
-    {% if answer %}
-        <h3>Answer:</h3>
-        <p>{{ answer }}</p>
-    {% endif %}
+<body class="bg-light text-dark">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">🎓 WiSeChicKen</h2>
+        
+        <form method="post" class="mb-4">
+            <div class="mb-3">
+                <textarea name="prompt" class="form-control" rows="4" placeholder="e.g., I want to learn AI with no coding experience. What should I take?"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary px-4">Get Answer</button>
+            </div>
+        </form>
+
+        {% if answer %}
+            <div class="card shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <strong>Answer</strong>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{ answer }}</p>
+                </div>
+            </div>
+        {% endif %}
+    </div>
 </body>
 </html>

@@ -1,8 +1,0 @@
-{
-  "input": "{{ user_input }}",
-  "parameters": {
-    "decoding_method": "greedy",
-    "max_new_tokens": 300,
-    "temperature": 0.5
-  }
-}

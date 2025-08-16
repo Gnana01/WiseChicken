@@ -35,7 +35,8 @@ def generate_answer(context, user_prompt):
     full_prompt = f"Answer the following using the given context.\n\nContext:\n{context}\n\nQuestion:\n{user_prompt}"
     response = client.chat.completions.create(
         model="mistralai/Mixtral-8x7B-Instruct-v0.1",
-        messages=[{"role":"user","content":full_prompt}]
+        messages=[{"role":"user","content":full_prompt}],
+        max_tokens=100
     )
     return response.choices[0].message.content
 
