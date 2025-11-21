@@ -107,6 +107,8 @@ You should see: Uvicorn running on http://127.0.0.1:5000
 ```
 website/index.html
 ```
+### 🖼️ Screenshot
+![WiseChicken Chat UI](frontend/assets/screenshot.png)
 ### 🧪 How It Works
 1. User inputs a question
 2. Sentence-Transformers encodes the query
