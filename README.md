@@ -67,7 +67,7 @@ And then magically returns tailored, context-grounded course suggestions.
            └──────────┴────────────────┘
 
 ### 🗂️ Project Structure
-
+```
 WISECHICKEN/
 │
 ├── backend/
@@ -79,6 +79,7 @@ WISECHICKEN/
     ├── index.html         # Chat UI
     ├── script.js          # Chat logic
     └── styles.css         # Modern UI styling
+```
 
 ### ⚙️ Installation & Setup
 - 1️⃣ Clone this repository
