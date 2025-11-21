@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from pinecone import Pinecone
 from together import Together
+from sentence_transformers import SentenceTransformer
 
 load_dotenv()
 
@@ -17,9 +18,9 @@ index = pc.Index(PINECONE_INDEX_NAME)
 
 client = Together(api_key=TOGETHER_API_KEY)
 
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
 def search_similar_chunks(query, top_k=5):
-    from sentence_transformers import SentenceTransformer
-    model = SentenceTransformer("all-MiniLM-L6-v2")
     query_vector = model.encode(query).tolist()
     results = index.query(vector=query_vector, top_k=top_k, include_metadata=True)
     chunks = []
@@ -39,9 +40,3 @@ def generate_answer(context, user_prompt):
         max_tokens=100
     )
     return response.choices[0].message.content
-
-if __name__ == "__main__":
-    user_prompt = input("Enter your question: ")
-    context = search_similar_chunks(user_prompt)
-    answer = generate_answer(context, user_prompt)
-    print("\n Answer:\n", answer)
