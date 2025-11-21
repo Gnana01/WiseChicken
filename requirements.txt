@@ -4,5 +4,8 @@ python-dotenv
 requests
 langchain
 langchain_community
-streamlit
 tqdm
+fastapi
+uvicorn[standard]
+python-multipart
+torch
